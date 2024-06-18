@@ -1,0 +1,18 @@
+node_modules
+
+/.cache
+/build
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Env files
+.env
+.env.*
+!.env.example

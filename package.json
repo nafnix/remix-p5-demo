@@ -1,0 +1,52 @@
+{
+  "name": "line",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Nafnix",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "remix vite:build",
+    "dev": "remix vite:dev",
+    "lint": "eslint .",
+    "prepare": "husky",
+    "start": "remix-serve ./build/server/index.js",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@remix-run/node": "^2.9.2",
+    "@remix-run/react": "^2.9.2",
+    "@remix-run/serve": "^2.9.2",
+    "husky": "^9.0.11",
+    "isbot": "4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.21.1",
+    "@eslint-react/eslint-plugin": "^1.5.15",
+    "@remix-run/dev": "^2.9.2",
+    "@types/p5": "^1.7.6",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@unocss/eslint-plugin": "^0.61.0",
+    "@unocss/reset": "^0.61.0",
+    "eslint": "8.57.0",
+    "eslint-plugin-format": "^0.1.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "lint-staged": "^15.2.7",
+    "p5": "^1.9.4",
+    "remix-utils": "^7.6.0",
+    "typescript": "^5.4.5",
+    "unocss": "^0.61.0",
+    "vite": "^5.3.1",
+    "vite-tsconfig-paths": "^4.3.2"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
